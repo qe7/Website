@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentrix</title>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism-tomorrow.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../gunmetal.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-python.min.js"></script>
+</head>
+<body>
+    <div class="inline">
+        <div class="outline">
+            <div class="dark_contrast rich_text">
+                <h1>Sentrix</h1>
+                
+                <h2>1. Introduction</h2>
+                <p>These are my initial thoughts and opinions on Sentrix.</p>
+                <img src="./sentrix/image.png" alt="Logo Image" style="max-width:100%; height:auto; border:1px solid #555;">
+
+                <div class="note">
+                    <p><strong>Note:</strong> These are my opinions and are subjective to change as I grown into the cheat more, I've only had a short time to test so far but these are my main concerns or issues.</p>
+                </div>
+
+                <h2>2. Loader</h2>
+                <p>Here are my first impressions of the loader:</p>
+                <ul>
+                    <li>The animations are smooth and give it a clean, polished feel.</li>
+                    <li>The color theme is minimalistic and modern very well chosen.</li>
+                </ul>
+
+                <p>However, the spacing between widgets isn't consistent, which gives the interface a slightly unfinished or unplanned appearance.</p>
+                <img src="./sentrix/1.png" alt="First Image" style="max-width:100%; height:auto; border:1px solid #555;">
+
+                <h2>3. CS2 Cheat</h2>
+                <p>These are my early thoughts on the main software itself:</p>
+
+                <ul>
+                    <li>The HUD designs are well-made and visually appealing.</li>
+                    <li>The triggerbot correctly avoids shooting through smokes, though the aimbot will still attempt to aim through them.</li>
+                    <li>Occasionally, the triggerbot fails to fire even when the delay is set to 0 and the crosshair is clearly over a hitbox. This usually happens when the triggerbot key is held before the target becomes visible.</li>
+                    <li>The aimbot FOV circle is quite thick consider adding toggles for the outline and line width.</li>
+                    <li>The aimbot's smoothing feels too low, making its usage appear obvious to spectators.</li>
+                    <li>For security reasons, you might implement logic so the aimbot only corrects aim if the deviation exceeds a certain threshold from the current view vector.</li>
+                    <li>The ESP looks clean overall, but some of the sliders for width, height, or size don't seem to have any effect.</li>
+                    <li>Personally, I don't think GUI or panic keybinds should appear on the keybind list adding an option to filter which keybinds are displayed would be a good improvement.</li>
+                    <li>I suspect the aimbot uses constant smoothing, which isn't ideal for either realism or security.</li>
+                    <li>The triggerbot lacks a visible hitbox configuration, so it's unclear what conditions trigger it to shoot.</li>
+                </ul>
+
+                <p>I also think the ESP player name should have the same outline as the weapon name. Depending on the font, the player name can be hard to read without it.</p>
+                <img src="./sentrix/2.png" alt="Second Image" style="max-width:100%; height:auto; border:1px solid #555;">
+
+                <h2>4. Theme</h2>
+                <p>The theme is sleek and minimalistic overall, though some inconsistencies stand out and could be improved.</p>
+                                
+                <p>Here's an example of what I mean:</p>
+                <img src="./sentrix/3.png" alt="Third Image" style="max-width:100%; height:auto; border:1px solid #555;">
+                <img src="./sentrix/4.png" alt="Fourth Image" style="max-width:100%; height:auto; border:1px solid #555;">
+                <img src="./sentrix/1.png" alt="First Image" style="max-width:100%; height:auto; border:1px solid #555;">
+
+                <p>Why not unify these designs under a single theme? The separation feels unnecessary and inconsistent.</p>
+
+                <h2>5. Suggested features</h2>
+
+                <ul>
+                    <li>A "safe mode" that disables all cheats except for basic visual enhancements like ESP and radar.</li>
+                    <li>An option to toggle between different aimbot smoothing algorithms, such as linear, exponential, or adaptive smoothing based on target movement.</li>
+                    <li>A UI option for votes on enemy team.</li>
+                    <li>A UI option for team damage, for griefing.</li>
+                </ul>
+
+                <h2>6. Conclusion</h2>
+
+                <p>Overall, Sentrix shows great potential with its clean design and solid features. With some refinements and additional options, it could become a top choice for users seeking both functionality and aesthetics.</p>
+
+                <p>Date: 13/11/2025 (dd/mm/yyyy)</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

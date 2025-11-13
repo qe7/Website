@@ -1,0 +1,164 @@
+/* Fonts */
+@font-face {
+    font-family: "PixelFont";
+    src: url("./fonts/proggyclean.ttf") format("truetype");
+}
+
+/* Body */
+body, html {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #1C1C1C; /* Dark gunmetal grey */
+    padding: 40px;
+    color: #C0C0C0; /* Light grey text */
+}
+
+/* Containers */
+.outline {
+    background-color: #1C1C1C;
+    padding: 1px;
+}
+
+.inline {
+    background-color: #2A2A2A;
+    padding: 1px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.light_contrast {
+    background-color: #333333;
+    padding: 4px;
+    text-align: center;
+}
+
+.dark_contrast {
+    background-color: #262626;
+    padding: 4px;
+}
+
+.button_container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.rich_text {
+    font-family: "PixelFont", monospace;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: never;
+    text-rendering: optimizeLegibility;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #C0C0C0;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.5;
+}
+
+.double_digit {
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+/* Code blocks */
+.code-block, pre[class*="language-"] {
+    background-color: #222222;
+    border: 1px solid #444444;
+    padding: 10px;
+    margin: 10px 0;
+    overflow-x: auto;
+    font-family: "PixelFont", monospace;
+    font-size: 14px;
+    color: #D0D0D0;
+}
+
+code[class*="language-"] {
+    font-family: "PixelFont", monospace;
+    font-size: 16px;
+}
+
+/* Math formulas */
+.math-container {
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #222222;
+    border: 1px solid #444444;
+}
+
+/* Headers */
+h1, h2, h3 {
+    font-family: "PixelFont", monospace;
+    font-size: 16px;
+    font-weight: normal;
+    color: #E0E0E0;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    border-bottom: 1px solid #444444;
+    padding-bottom: 5px;
+    margin: 20px 0 10px 0;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 2px solid #444444;
+    margin-top: 0;
+}
+
+/* Links */
+a {
+    color: #7FB3C2; /* Muted teal */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A9CCE3;
+    text-decoration: underline;
+}
+
+/* Lists */
+ol {
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-left: 0px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+}
+
+ul li::before {
+    content: "- ";
+    color: #C0C0C0;
+}
+
+ol li::before {
+    content: " ";
+}
+
+/* Note block */
+.note {
+    background-color: #333844; /* Dark bluish background for notes */
+    border-left: 4px solid #7FB3C2; /* Muted teal accent like a highlight */
+    padding: 10px 15px;
+    margin: 15px 0;
+    font-family: "PixelFont", monospace;
+    font-size: 15px;
+    color: #E0E0E0;
+    line-height: 1.5;
+}
+
+.note strong {
+    color: #A9CCE3; /* Slightly brighter accent for bold text inside notes */
+}
